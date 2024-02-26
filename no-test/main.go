@@ -12,7 +12,7 @@ import "C"
 import "fmt"
 
 //export getState
-func getState(index C.int) C.int {
+func getState(index int) int {
 	fmt.Println("Function getStateWrapper from Go called!")
 	if index == 3 {
 		return 1337
