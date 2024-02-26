@@ -1,0 +1,13 @@
+go:
+    main(){
+        apply_tx(get_state_wrapper)
+    } 
+    get_state_go()
+
+c-go:
+    get_state_wrapper(){
+        get_state_go()
+    }
+
+rust:
+    apply_tx (get_state_wrapper *fun_pointer)
